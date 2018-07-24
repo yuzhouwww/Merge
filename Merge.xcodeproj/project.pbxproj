@@ -13,6 +13,7 @@
 		B5078F891EBCFD78001FA16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5078F871EBCFD78001FA16D /* Main.storyboard */; };
 		B5078F8B1EBCFD78001FA16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5078F8A1EBCFD78001FA16D /* Assets.xcassets */; };
 		B5078F8E1EBCFD78001FA16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5078F8C1EBCFD78001FA16D /* LaunchScreen.storyboard */; };
+		B5078F971EBD0624001FA16D /* MergeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5078F961EBD0624001FA16D /* MergeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B5078F8A1EBCFD78001FA16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5078F8D1EBCFD78001FA16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5078F8F1EBCFD78001FA16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5078F951EBD0624001FA16D /* MergeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeViewController.h; sourceTree = "<group>"; };
+		B5078F961EBD0624001FA16D /* MergeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				B5078F821EBCFD78001FA16D /* AppDelegate.m */,
 				B5078F841EBCFD78001FA16D /* ViewController.h */,
 				B5078F851EBCFD78001FA16D /* ViewController.m */,
+				B5078F951EBD0624001FA16D /* MergeViewController.h */,
+				B5078F961EBD0624001FA16D /* MergeViewController.m */,
 				B5078F871EBCFD78001FA16D /* Main.storyboard */,
 				B5078F8A1EBCFD78001FA16D /* Assets.xcassets */,
 				B5078F8C1EBCFD78001FA16D /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				B5078F861EBCFD78001FA16D /* ViewController.m in Sources */,
 				B5078F831EBCFD78001FA16D /* AppDelegate.m in Sources */,
 				B5078F801EBCFD78001FA16D /* main.m in Sources */,
+				B5078F971EBD0624001FA16D /* MergeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4BVL92WAB;
 				INFOPLIST_FILE = Merge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfun.Merge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4BVL92WAB;
 				INFOPLIST_FILE = Merge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfun.Merge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

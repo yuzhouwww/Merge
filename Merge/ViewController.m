@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import Photos;
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
+        [self gotoMainInterface];
+    }
 }
 
 
@@ -25,5 +29,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)authorizeButtonAction:(id)sender {
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        switch (status) {
+            case PHAuthorizationStatusAuthorized:
+                [self gotoMainInterface];
+                break;
+                
+            default:
+                NSLog(@"%ld", (long)status);
+                break;
+        }
+    }];
+}
+
+- (void)gotoMainInterface {
+    [self performSegueWithIdentifier:@"Main" sender:self];
+}
 
 @end
